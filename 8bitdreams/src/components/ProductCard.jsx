@@ -3,7 +3,7 @@ import '../styles/ProductCard.css';
 function ProductCard({ title, description, price, image, platforms }) {
   return (
     <div className="card">
-      <img src={image} alt={title} width={150} />
+      <img src={image} alt={title + ' image'} />
       <h3>{title}</h3>
       <p>{description}</p>
       <p>{platforms}</p>
