@@ -1,6 +1,8 @@
+import '../styles/ProductCard.css';
+
 function ProductCard({ title, description, price, image, platforms }) {
   return (
-    <div>
+    <div className="card">
       <img src={image} alt={title} width={150} />
       <h3>{title}</h3>
       <p>{description}</p>
