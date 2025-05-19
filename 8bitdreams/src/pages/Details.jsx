@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import products from '../data/products';
 
 export default function Details() {
@@ -10,9 +11,13 @@ export default function Details() {
     <div className="productDetails">
       <img src={product.image} alt={product.title + ' imagen'} />
       <h1>{product.title}</h1>
-      <p>{product.platforms}</p>
-      <p>{product.description}</p>
+      <p>Año de publicación: {product.year}</p>
+      <p>Plataformas: {product.platforms}</p>
+      <p>Tipo de juego: {product.description}</p>
       <p>{product.synopsis}</p>
+      <Link to={'/'}>
+        <button>Regresar</button>
+      </Link>
     </div>
   );
 }

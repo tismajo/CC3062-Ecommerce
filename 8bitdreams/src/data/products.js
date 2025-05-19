@@ -9,6 +9,7 @@ const products = [
     platforms: 'Nintendo Switch',
     synopsis:
       'En un vasto mundo de Hyrule, los jugadores asumen el papel de Link, quien despierta tras un sueño de 100 años. Debe explorar el reino, resolver acertijos y enfrentarse a enemigos mientras busca recuperar su memoria y derrotar a Calamity Ganon. La libertad de exploración y la interacción con el entorno son clave en esta aventura épica.',
+    year: '2017',
   },
   {
     id: 2,
@@ -19,8 +20,9 @@ const products = [
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Fsignalis-game-poster_a25ubGWUmZqaraWkpJRmZmpnrWdlaW0.jpg&f=1&nofb=1&ipt=5f50b364939b4bbbcae049b1676bdae1d3ca41c763514e7201ca27c1a352271f',
     platforms: 'PC, PS4, PS5, Xbox One, Xbox Series, Nintendo Switch',
     synopsis:
-      'En un mundo de ciencia ficción, los jugadores controlan a Elster, un agente que busca a su compañera perdida en un entorno lleno de horrores y misterios. Con una atmósfera inquietante y mecánicas de juego que combinan la exploración y la resolución de acertijos, Signalis ofrece una experiencia de terror psicológico única.',
-  },
+      'En un mundo de ciencia ficción, los jugadores controlan a Elster, una agente que busca a su compañera perdida en un entorno lleno de horrores y misterios. Con una atmósfera inquietante y mecánicas de juego que combinan la exploración y la resolución de acertijos, Signalis ofrece una experiencia de terror psicológico única.',
+    year: '2022',
+    },
   {
     id: 3,
     title: 'The Legend of Zelda: Tears of the Kingdom',
@@ -31,7 +33,8 @@ const products = [
     platforms: 'Nintendo Switch, Nintendo Switch 2',
     synopsis:
       'Continuando la historia de Breath of the Wild, Tears of the Kingdom lleva a los jugadores a nuevas alturas en Hyrule, donde deben descubrir secretos antiguos y enfrentarse a nuevos enemigos. La narrativa se centra en la lucha por la supervivencia y la restauración del reino, con un enfoque en la exploración vertical y la construcción de estructuras.',
-  },
+    year: '2023',
+    },
   {
     id: 4,
     title: 'Bayonetta',
@@ -42,7 +45,8 @@ const products = [
     platforms: 'Nintendo Switch, PS3, PS4, Xbox 360, Xbox One, PC',
     synopsis:
       'Los jugadores controlan a Bayonetta, una bruja con habilidades sobrenaturales, mientras lucha contra ángeles y demonios en un mundo lleno de acción y estilo. Con un sistema de combate fluido y combos espectaculares, el juego destaca por su narrativa intrigante y su estética visual impactante.',
-  },
+    year: '2009',
+    },
   {
     id: 5,
     title: 'The Elder Scrolls V: Skyrim',
@@ -53,6 +57,7 @@ const products = [
     platforms: 'PC, PS3, PS4, Xbox 360, Xbox One, Nintendo Switch',
     synopsis:
       'En el vasto mundo de Skyrim, los jugadores asumen el papel de un guerrero con la capacidad de usar el poder de los dragones. La historia se desarrolla en un entorno rico en lore, donde los jugadores pueden elegir su camino, completar misiones y explorar un mundo lleno de criaturas y magia.',
+    year: '2011',
   },
   {
     id: 6,
@@ -64,7 +69,8 @@ const products = [
     platforms: 'Nintendo Switch, PC, PS4, PS5, Xbox One, Xbox Series',
     synopsis:
       'Los jugadores se convierten en cazadores que deben rastrear y capturar o eliminar enormes criaturas en un mundo vibrante y lleno de vida. Con un enfoque en la cooperación multijugador, Monster Hunter World ofrece una experiencia de caza emocionante y estratégica, donde cada misión presenta nuevos desafíos.',
-  },
+    year: '2018',
+    },
   {
     id: 7,
     title: 'Travellers Rest',
@@ -75,7 +81,8 @@ const products = [
     platforms: 'PC',
     synopsis:
       'En este juego, los jugadores gestionan su propia taberna, donde deben atender a los clientes, preparar comidas y bebidas, y mejorar su establecimiento. La combinación de simulación y gestión ofrece una experiencia relajante y entretenida, ideal para los amantes de la estrategia.',
-  },
+    year: '2022',
+    },
   {
     id: 8,
     title: 'Starbound',
@@ -86,7 +93,8 @@ const products = [
     platforms: 'PC, PS4, Xbox One, Nintendo Switch',
     synopsis:
       'Los jugadores exploran un universo infinito, construyendo y personalizando su propio hogar tras la destrucción de la tierra en diferentes planetas. Con un enfoque en la exploración y la creatividad, Starbound permite a los jugadores interactuar con diversas razas alienígenas y participar en misiones emocionantes.',
-  },
+    year: '2016',
+    },
   {
     id: 9,
     title: 'Stardew Valley',
@@ -97,7 +105,8 @@ const products = [
     platforms: 'PC, PS4, Xbox One, Nintendo Switch, PS Vita, iOS, Android',
     synopsis:
       'Los jugadores heredan una granja en ruinas y deben restaurarla mientras interactúan con los habitantes del pueblo. Stardew Valley combina la agricultura, la minería y la construcción de relaciones en un entorno encantador y relajante, ofreciendo una experiencia de juego adictiva.',
-  },
+    year: '2016',
+    },
   {
     id: 10,
     title: 'Blasphemous',
@@ -108,6 +117,7 @@ const products = [
     platforms: 'PC, PS4, Xbox One, Nintendo Switch',
     synopsis:
       'En un mundo de pesadilla lleno de religión y horror, los jugadores controlan a El Penitente, un guerrero en busca de redención. Con un estilo artístico impresionante y un combate desafiante, Blasphemous ofrece una narrativa profunda y un ambiente inquietante que atrapa a los jugadores.',
-  },
+    year: '2019',
+    },
 ];
 export default products;
