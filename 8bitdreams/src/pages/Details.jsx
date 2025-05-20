@@ -1,9 +1,14 @@
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../context/CartContext';
+
 import products from '../data/products';
+import '../styles/Details.css';
+import { useContext } from 'react';
 
 export default function Details() {
   const { id } = useParams();
+  const { addToCart } = useContext(CartContext);
   const product = products.find((product) => product.id === parseInt(id));
   if (!product) return <p>No se pudo encontrar el producto.</p>;
 
@@ -18,6 +23,7 @@ export default function Details() {
       <Link to={'/'}>
         <button>Regresar</button>
       </Link>
+      <button onClick={() => addToCart(product)}>Añadir al carrito</button>
     </div>
   );
 }

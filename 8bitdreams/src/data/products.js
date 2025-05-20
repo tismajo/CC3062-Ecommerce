@@ -22,7 +22,7 @@ const products = [
     synopsis:
       'En un mundo de ciencia ficción, los jugadores controlan a Elster, una agente que busca a su compañera perdida en un entorno lleno de horrores y misterios. Con una atmósfera inquietante y mecánicas de juego que combinan la exploración y la resolución de acertijos, Signalis ofrece una experiencia de terror psicológico única.',
     year: '2022',
-    },
+  },
   {
     id: 3,
     title: 'The Legend of Zelda: Tears of the Kingdom',
@@ -34,7 +34,7 @@ const products = [
     synopsis:
       'Continuando la historia de Breath of the Wild, Tears of the Kingdom lleva a los jugadores a nuevas alturas en Hyrule, donde deben descubrir secretos antiguos y enfrentarse a nuevos enemigos. La narrativa se centra en la lucha por la supervivencia y la restauración del reino, con un enfoque en la exploración vertical y la construcción de estructuras.',
     year: '2023',
-    },
+  },
   {
     id: 4,
     title: 'Bayonetta',
@@ -46,7 +46,7 @@ const products = [
     synopsis:
       'Los jugadores controlan a Bayonetta, una bruja con habilidades sobrenaturales, mientras lucha contra ángeles y demonios en un mundo lleno de acción y estilo. Con un sistema de combate fluido y combos espectaculares, el juego destaca por su narrativa intrigante y su estética visual impactante.',
     year: '2009',
-    },
+  },
   {
     id: 5,
     title: 'The Elder Scrolls V: Skyrim',
@@ -70,7 +70,7 @@ const products = [
     synopsis:
       'Los jugadores se convierten en cazadores que deben rastrear y capturar o eliminar enormes criaturas en un mundo vibrante y lleno de vida. Con un enfoque en la cooperación multijugador, Monster Hunter World ofrece una experiencia de caza emocionante y estratégica, donde cada misión presenta nuevos desafíos.',
     year: '2018',
-    },
+  },
   {
     id: 7,
     title: 'Travellers Rest',
@@ -82,7 +82,7 @@ const products = [
     synopsis:
       'En este juego, los jugadores gestionan su propia taberna, donde deben atender a los clientes, preparar comidas y bebidas, y mejorar su establecimiento. La combinación de simulación y gestión ofrece una experiencia relajante y entretenida, ideal para los amantes de la estrategia.',
     year: '2022',
-    },
+  },
   {
     id: 8,
     title: 'Starbound',
@@ -94,7 +94,7 @@ const products = [
     synopsis:
       'Los jugadores exploran un universo infinito, construyendo y personalizando su propio hogar tras la destrucción de la tierra en diferentes planetas. Con un enfoque en la exploración y la creatividad, Starbound permite a los jugadores interactuar con diversas razas alienígenas y participar en misiones emocionantes.',
     year: '2016',
-    },
+  },
   {
     id: 9,
     title: 'Stardew Valley',
@@ -106,7 +106,7 @@ const products = [
     synopsis:
       'Los jugadores heredan una granja en ruinas y deben restaurarla mientras interactúan con los habitantes del pueblo. Stardew Valley combina la agricultura, la minería y la construcción de relaciones en un entorno encantador y relajante, ofreciendo una experiencia de juego adictiva.',
     year: '2016',
-    },
+  },
   {
     id: 10,
     title: 'Blasphemous',
@@ -118,6 +118,6 @@ const products = [
     synopsis:
       'En un mundo de pesadilla lleno de religión y horror, los jugadores controlan a El Penitente, un guerrero en busca de redención. Con un estilo artístico impresionante y un combate desafiante, Blasphemous ofrece una narrativa profunda y un ambiente inquietante que atrapa a los jugadores.',
     year: '2019',
-    },
+  },
 ];
 export default products;
