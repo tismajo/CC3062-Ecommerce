@@ -20,10 +20,11 @@ export default function Details() {
       <p>Plataformas: {product.platforms}</p>
       <p>Tipo de juego: {product.description}</p>
       <p>{product.synopsis}</p>
+      <p>Q{product.price.toFixed(2)}</p>
+      <button onClick={() => addToCart(product)}>Añadir al carrito</button>
       <Link to={'/'}>
         <button>Regresar</button>
       </Link>
-      <button onClick={() => addToCart(product)}>Añadir al carrito</button>
     </div>
   );
 }
