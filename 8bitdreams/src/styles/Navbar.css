@@ -1,19 +1,29 @@
-  .navbar {
-    display: 'flex';
-    padding: '1rem';
-    background-color: #fff;
-    width: 100%;
-    align-content: end;
-  }
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  background-color: #fff;
+  width: 100%;
+  align-content: end;
+}
 
-  .navbar img {
-    padding-top: 10px;
-    width: 2%;
-    height: 4%;
-  }
+.navbar img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
 
-  .navbar button {
-    background: 'none';
-    border: 'none';
-    cursor: 'pointer';
-  }
+.navbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar button img {
+  width: 24px;
+  height: 24px;
+  padding-bottom: 5px;
+}

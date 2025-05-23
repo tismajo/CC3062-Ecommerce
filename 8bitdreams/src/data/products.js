@@ -10,6 +10,7 @@ const products = [
     synopsis:
       'En un vasto mundo de Hyrule, los jugadores asumen el papel de Link, quien despierta tras un sueño de 100 años. Debe explorar el reino, resolver acertijos y enfrentarse a enemigos mientras busca recuperar su memoria y derrotar a Calamity Ganon. La libertad de exploración y la interacción con el entorno son clave en esta aventura épica.',
     year: '2017',
+
   },
   {
     id: 2,
@@ -46,6 +47,7 @@ const products = [
     synopsis:
       'Los jugadores controlan a Bayonetta, una bruja con habilidades sobrenaturales, mientras lucha contra ángeles y demonios en un mundo lleno de acción y estilo. Con un sistema de combate fluido y combos espectaculares, el juego destaca por su narrativa intrigante y su estética visual impactante.',
     year: '2009',
+    likes: 0,
   },
   {
     id: 5,
@@ -58,6 +60,7 @@ const products = [
     synopsis:
       'En el vasto mundo de Skyrim, los jugadores asumen el papel de un guerrero con la capacidad de usar el poder de los dragones. La historia se desarrolla en un entorno rico en lore, donde los jugadores pueden elegir su camino, completar misiones y explorar un mundo lleno de criaturas y magia.',
     year: '2011',
+    likes: 0,
   },
   {
     id: 6,
