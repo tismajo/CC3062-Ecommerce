@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useMemo } from 'react';
 import { CartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom';
 
@@ -8,10 +8,12 @@ export default function Cart() {
   const { cartItems, increaseQuantity, decreaseQuantity } =
     useContext(CartContext);
 
-  const totalSubtotal = cartItems.reduce(
-    (acc, item) => acc + item.price * item.quantity,
-    0,
-  );
+  const totalSubtotal = useMemo(() => {
+    return cartItems.reduce(
+      (acc, item) => acc + item.price * item.quantity,
+      0,
+    );
+  }, [cartItems]);
 
   return (
     <main className="cart-container">

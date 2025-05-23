@@ -21,7 +21,7 @@ export default function Details() {
       <p>Tipo de juego: {product.description}</p>
       <p>{product.synopsis}</p>
       <p>Q{product.price.toFixed(2)}</p>
-      <Link to="cart">
+      <Link to="/cart">
         <button onClick={() => addToCart(product)}>Añadir al carrito</button>
       </Link>
       <Link to={'/'}>
