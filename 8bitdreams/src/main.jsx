@@ -8,7 +8,10 @@ import Home from './pages/Home.jsx';
 import ProductDetails from './pages/Details.jsx';
 import Cart from './pages/CartPage.jsx';
 import NotFound from './pages/NotFound.jsx';
+import HistoryPage from './pages/History.jsx'
+
 import { CartProvider } from './context/CartContext.jsx';
+import { HistoryProvider } from './context/HistoryContext.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +22,7 @@ const router = createBrowserRouter([
       { path: '/details/:id', element: <ProductDetails /> },
       { path: '/cart', element: <Cart /> },
       { path: '*', element: <NotFound /> },
+      { path: '/history', element: <HistoryPage /> },
     ],
   },
 ]);
@@ -26,7 +30,9 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <CartProvider>
-      <RouterProvider router={router} />
+      <HistoryProvider>
+        <RouterProvider router={router} />
+      </HistoryProvider>
     </CartProvider>
   </StrictMode>,
 );

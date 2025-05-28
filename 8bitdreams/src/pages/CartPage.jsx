@@ -1,11 +1,12 @@
 import { useContext, useMemo } from 'react';
 import { CartContext } from '../context/CartContext';
+import { HistoryContext } from '../context/HistoryContext';
 import { Link } from 'react-router-dom';
 
 import '../styles/Cart.css';
 
 export default function Cart() {
-  const { cartItems, increaseQuantity, decreaseQuantity } =
+  const { cartItems, increaseQuantity, decreaseQuantity, clearCart } =
     useContext(CartContext);
 
   const totalSubtotal = useMemo(() => {
@@ -14,6 +15,15 @@ export default function Cart() {
       0,
     );
   }, [cartItems]);
+
+  const { addPurchase } = useContext(HistoryContext);
+
+  const handleBuy = () => {
+    if (cartItems.length === 0) return;
+    addPurchase(cartItems);
+    clearCart();
+    alert('¡Compra registrada!');
+  };
 
   return (
     <main className="cart-container">
@@ -69,9 +79,9 @@ export default function Cart() {
 
           <div className="cart-actions">
             <Link to="/">
-              <button className="cancel-button">CANCELAR</button>
+              <button className="cancel-button" onClick={clearCart}>CANCELAR</button>
             </Link>
-            <button className="buy-button">COMPRAR</button>
+            <button className="buy-button" onClick={handleBuy}>COMPRAR</button>
           </div>
         </aside>
       </div>
