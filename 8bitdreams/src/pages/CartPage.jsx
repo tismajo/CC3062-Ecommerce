@@ -10,10 +10,7 @@ export default function Cart() {
     useContext(CartContext);
 
   const totalSubtotal = useMemo(() => {
-    return cartItems.reduce(
-      (acc, item) => acc + item.price * item.quantity,
-      0,
-    );
+    return cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
   }, [cartItems]);
 
   const { addPurchase } = useContext(HistoryContext);
@@ -47,7 +44,9 @@ export default function Cart() {
                   <button onClick={() => decreaseQuantity(item.id)}>-</button>
                   <span>{item.quantity}</span>
                   {totalSubtotal >= 999.99 && (
-                    <p className="limit-warning">No puedes continuar, excediste el límite.</p>
+                    <p className="limit-warning">
+                      Se sobrepasa el límite de Q999.99
+                    </p>
                   )}
 
                   <button
@@ -79,9 +78,13 @@ export default function Cart() {
 
           <div className="cart-actions">
             <Link to="/">
-              <button className="cancel-button" onClick={clearCart}>CANCELAR</button>
+              <button className="cancel-button" onClick={clearCart}>
+                CANCELAR
+              </button>
             </Link>
-            <button className="buy-button" onClick={handleBuy}>COMPRAR</button>
+            <button className="buy-button" onClick={handleBuy}>
+              COMPRAR
+            </button>
           </div>
         </aside>
       </div>

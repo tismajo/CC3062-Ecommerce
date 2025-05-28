@@ -8,7 +8,7 @@ import Home from './pages/Home.jsx';
 import ProductDetails from './pages/Details.jsx';
 import Cart from './pages/CartPage.jsx';
 import NotFound from './pages/NotFound.jsx';
-import HistoryPage from './pages/History.jsx'
+import HistoryPage from './pages/History.jsx';
 
 import { CartProvider } from './context/CartContext.jsx';
 import { HistoryProvider } from './context/HistoryContext.jsx';

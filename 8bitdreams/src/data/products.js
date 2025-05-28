@@ -10,7 +10,6 @@ const products = [
     synopsis:
       'En un vasto mundo de Hyrule, los jugadores asumen el papel de Link, quien despierta tras un sueño de 100 años. Debe explorar el reino, resolver acertijos y enfrentarse a enemigos mientras busca recuperar su memoria y derrotar a Calamity Ganon. La libertad de exploración y la interacción con el entorno son clave en esta aventura épica.',
     year: '2017',
-
   },
   {
     id: 2,

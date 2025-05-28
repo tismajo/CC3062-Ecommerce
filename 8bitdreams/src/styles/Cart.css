@@ -53,7 +53,7 @@ main {
 }
 
 .item-details {
-  display: flex;
+  color: #000;
   flex-direction: column;
 }
 
