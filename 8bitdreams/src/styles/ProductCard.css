@@ -23,6 +23,21 @@
   object-fit: cover;
 }
 
+.price-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.discounted-price {
+  font-weight: bold;
+}
+
 @media (max-width: 480px) {
   .card img {
     height: 150px;
