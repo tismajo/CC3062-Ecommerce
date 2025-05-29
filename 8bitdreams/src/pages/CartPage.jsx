@@ -10,8 +10,30 @@ export default function Cart() {
     useContext(CartContext);
 
   const totalSubtotal = useMemo(() => {
-    return cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    return cartItems.reduce((acc, item) => {
+      const discountedPrice = item.discount
+        ? item.price - (item.price * item.discount) / 100
+        : item.price;
+      return acc + discountedPrice * item.quantity;
+    }, 0);
   }, [cartItems]);
+
+  const totalDescuento = useMemo(() => {
+    return cartItems.reduce((acc, item) => {
+      if (item.discount) {
+        const discountAmount = (item.price * item.discount) / 100;
+        return acc + discountAmount * item.quantity;
+      }
+      return acc;
+    }, 0);
+  }, [cartItems]);
+
+  const totalCantidad = useMemo(() => {
+    return cartItems.reduce((acc, item) => acc + item.quantity, 0);
+  }, [cartItems]);
+
+  const limiteCantidadExcedido = totalCantidad > 9;
+
 
   const { addPurchase } = useContext(HistoryContext);
 
@@ -65,16 +87,21 @@ export default function Cart() {
           <h3>Total</h3>
           <p>
             Subtotal de productos
-            <br />Q{totalSubtotal.toFixed(2)}
+            <br />Q{(totalSubtotal + totalDescuento).toFixed(2)}
           </p>
           <p>
             Descuentos aplicados
-            <br />
-            Q0.00
+            <br />-Q{totalDescuento.toFixed(2)}
           </p>
           <p>
             <strong>TOTAL: Q{totalSubtotal.toFixed(2)}</strong>
           </p>
+
+          {limiteCantidadExcedido && (
+            <p className="limit-warning">
+              No puedes comprar más de 9 productos por política de la tienda.
+            </p>
+          )}
 
           <div className="cart-actions">
             <Link to="/">
@@ -82,7 +109,11 @@ export default function Cart() {
                 CANCELAR
               </button>
             </Link>
-            <button className="buy-button" onClick={handleBuy}>
+            <button
+              className="buy-button"
+              onClick={handleBuy}
+              disabled={limiteCantidadExcedido}
+            >
               COMPRAR
             </button>
           </div>

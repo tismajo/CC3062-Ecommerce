@@ -14,3 +14,28 @@
   margin-bottom: 1rem;
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  .purchase-entry {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: nowrap;
+  }
+
+  .purchase-title {
+    font-size: 1rem;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .purchase-entry img {
+    width: 90px;
+    height: auto;
+  }
+
+  .purchase-details {
+    font-size: 0.85rem;
+  }
+}
